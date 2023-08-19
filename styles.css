@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+.intro-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #101820;
+}
+h3{
+    color: #FEE715;
+    font-size: 80px;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    background-color: #101820;
+}
+.image-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    margin-left: 300px;
+    align-items: space-between;
+}
+.mypfp{
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    box-shadow: 0 0 20px #FEE715;
+}
+.mypfp:hover{
+    box-shadow: 0 0 80px #FEE715;
+}
+.About-Me-text,p{
+    margin-left: 80px;
+    color: #FEE715;
+    font-size: 40px;
+    font-family: 'Roboto', sans-serif;
+}
