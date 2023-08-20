@@ -3,35 +3,51 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    background-color: #101820;
+    background-color: #01257D;
 }
 h3{
-    color: #FEE715;
+    color: #00FFFF;
     font-size: 80px;
     font-family: 'Roboto', sans-serif;
 }
 body{
-    background-color: #101820;
+    background-color: #01257D;
 }
 .image-box{
     display: flex;
     flex-direction: row;
     justify-content: left;
-    margin-left: 300px;
+    margin-left: 200px;
     align-items: space-between;
 }
 .mypfp{
-    height: 300px;
-    width: 300px;
+    height: 400px;
+    width: 400px;
     border-radius: 50%;
-    box-shadow: 0 0 20px #FEE715;
+    box-shadow: 0 0 20px #00FFFF
 }
 .mypfp:hover{
-    box-shadow: 0 0 80px #FEE715;
+    box-shadow: 0 0 80px #00FFFF
+}
+a{
+    color: blue;
+    font-weight: 2px;
 }
 .About-Me-text,p{
     margin-left: 80px;
-    color: #FEE715;
-    font-size: 40px;
+    color: #00FFFF;
+    font-size: 50px;
     font-family: 'Roboto', sans-serif;
+}
+.footer-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 400px;
+}
+footer{
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    color: #00FFFF;
+
 }
