@@ -61,7 +61,7 @@ footer{
     color: #00FFFF;
 
 }
-.Programming-Knowledge{
+.Programming-Knowledge,.projects,.Education{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -76,7 +76,29 @@ footer{
 .pythonlogo,.Clogo,.htmllogo,.csslogo,.jslogo{
     height: 200px;
     width: 200px;
+    border-radius: 20px;
+}
+.Projects,.education{
+    text-align: center;
+    color: #00FFFF;
+    font-size: 80px;
+    font-family: 'Roboto', sans-serif;
 }
 img:hover{
     box-shadow: 0 0 80px #00FFFF
+}
+.calcProject,.rpsProject{
+    height: 500px;
+    width: 800px;
+    border-radius: 5px;
+}
+.essLogo{
+    height: 400px;
+    width: 400px;
+    border-radius: 5px;
+}
+.uofgLogo{
+    height: 400px;
+    width: 600px;
+    border-radius: 5px;
 }
