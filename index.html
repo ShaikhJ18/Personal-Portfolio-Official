@@ -13,9 +13,9 @@
                 <img src="Jawadlogo.png" class="logo"/>
                 <ul>
                     <li><a href="#Home">Home</a></li>
-                    <li><a href="#About">About</a></li>
-                    <li><a href="#Projects">Projects</a></li>
-                    <li><a href="#Contact">Contact</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
             <div class="top-portion-text">
@@ -41,21 +41,100 @@
                         Full-Stack Web Development 
                     </p>
                     <div class="tab-titles">
-                        <p class="tab-links" active-link>
+                        <p class="tab-links active-link" onclick="opentab('skills')">
                             Skills
                         </p>
-                        <p class="tab-links">
-                            Experience
-                        </p>
-                        <p class="tab-links">
+                        <p class="tab-links active-link" onclick="opentab('education')">
                             Education
                         </p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>HTML</span></li>
+                            <li><span>CSS</span></li>
+                            <li><span>JavaScript</span></li>
+                            <li><span>C</span></li>
+                            <li><span>Python</span></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Erindale Secondary School</span><br>OSSD</li>
+                            <li><span>University of Guelph</span><br>2022-present<br>Bachelor of Computing</li>
+                        </ul>
                     </div>
                 </div>
                 <div class="about-col3"></div>
             </div>
         </div>
     </div>
-    
+    <div id="projects">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="calcproject.png">
+                    <div class="layer">
+                        <h3>Calculator App</h3>
+                        <p>
+                            Calculator built from scratch using
+                            HTML, CSS, and JaavaScript
+                        </p>
+                        <a href="#"><button>Checkout</button></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="rpsproject.png">
+                    <div class="layer">
+                        <h3>Rock, Paper, Scissors Game</h3>
+                        <p>
+                            Rock, Paper, Scissors game built from scratch using
+                            HTML, CSS, and JaavaScript
+                        </p>
+                        <a href="#"><button>Checkout</button></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p>J.shklinkedin@gmail.com</p>
+                    <div class="social-icons">
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="container-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name"/>
+                        <input type="email" name="email" placeholder="Your Email"/>
+                        <textarea name="Message" rows="6" placeholder="You Message"></textarea>
+                        <button type="submit">Submit</button>
+
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents")
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link")
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab")
+            }
+            event.currentTarget.classList.add("active-link")
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+
+    </script>
 </body>
 </html>
