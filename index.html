@@ -1,45 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8"/>
-        <link rel="stylesheet" href="styles.css"/>
-        <title>Jawad Shaikh</title>
-    </head>
-    <body>
-        <div class="intro-box">
-            <h3>Hi There ! My Name Is Jawad Shaikh 👋</h3>
-        </div>
-        <div class="image-box">
-            <img src="myface.jpeg" class="mypfp"/>
-            <div class="About Me">
-                <h2 class="About-Me-text">About Me :</h2>
-                <p>
-                    I am a 2nd year Computer Science student at the 
-                    University of Guelph Aspiring to become 
-                    a fullstack web developer.
-                </p>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jawad Shaikh </title>
+</head>
+<body>
+    <div class="top-portion" id="Home">
+        <div class="container">
+            <nav>
+                <img src="Jawadlogo.png" class="logo"/>
+                <ul>
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#Projects">Projects</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="top-portion-text">
+                <p>Aspiring Web Developer</p>
+                <h1>Hi, I am <span>Jawad</span><br> Shaikh a second year Computer Science Student</h1>
             </div>
         </div>
-        <h3 class="education">Education</h3>
-        <div class="Education">
-            <a href="https://erindale.peelschools.org/" target="_blank"><img src="ESS.svg" class="essLogo"/></a>
-            <a href="https://www.uoguelph.ca/future-students" target="_blank"><img src="uofglogo.png" class="uofgLogo"/></a>
+
+    </div>
+    <!-- About me Section-->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="myface.jpeg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="about-title">About Me</h1>
+                    <p>
+                        I am currently Working Towards a
+                        Computer Science Major and Mathematics
+                        Minor. I am currently interested in learning
+                        Full-Stack Web Development 
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links" active-link>
+                            Skills
+                        </p>
+                        <p class="tab-links">
+                            Experience
+                        </p>
+                        <p class="tab-links">
+                            Education
+                        </p>
+                    </div>
+                </div>
+                <div class="about-col3"></div>
+            </div>
         </div>
-        <h3 class="Programming-Experience">Programming Experience</h3>
-        <div class="Programming-Knowledge">
-            <a href="https://www.python.org/" target="_blank"><img src="pythonlogo.png" class="pythonlogo"/></a>
-            <a href="https://www.cprogramming.com/" target="_blank"><img src="Clogo.png" class="Clogo"/></a>
-            <a href="https://html.com/" target="_blank"><img src="htmllogo.png" class="htmllogo"/></a>
-            <a href="https://www.w3schools.com/css/css_website_layout.asp" target="_blank"><img src="csslogo.png" class="csslogo"/></a>
-            <a href="https://www.w3schools.com/css/css_website_layout.asp" target="_blank"><img src="jslogo.png" class="jslogo"/></a>
-        </div>
-        <h3 class="Projects">Projects</h3>
-        <div class="projects">
-            <a href="https://shaikhj18.github.io/Calculator_Odin_Project/" target="_blank"><img src="calcproject.png" class="calcProject"/></a>
-            <a href="https://shaikhj18.github.io/Rock_Paper_Scissors/" target="_blank"><img src="rpsproject.png" class="rpsProject"/></a>
-        </div>
-        <div class="footer-box">
-        <footer>Copyright © Jawad Shaikh 2023</footer>
-        </div>
-    </body>
+    </div>
+    
+</body>
 </html>
