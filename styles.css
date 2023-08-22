@@ -121,6 +121,7 @@ nav ul li a:hover::after{
     color: #ababab;
     transition: 1s;
 }
+
 .tab-links::after{
     content: '';
     width: 0;
