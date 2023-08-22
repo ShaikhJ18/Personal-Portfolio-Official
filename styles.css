@@ -42,6 +42,10 @@ nav ul li a{
     text-decoration: none;
     font-size: 18px;
     position: relative;
+    transition: 1s;
+}
+nav ul li a:hover{
+    color: #00FFFF;
 }
 nav ul li a::after{
     content: '';
@@ -67,8 +71,17 @@ nav ul li a:hover::after{
 .top-portion-text h1 span{
     color: #00FFFF;
 }
-
-
+.about-text{
+    font-size: 20px;
+    color: #ababab;
+    transition: 1s;
+}
+.about-text:hover{
+    color: #00FFFF;
+}
+.about-content{
+    font-size: 40px;
+}
 #about{
     padding: 80px 0;
     color: #ababab;
@@ -84,12 +97,13 @@ nav ul li a:hover::after{
 .about-col-1 img{
     width: 100%;
     border-radius: 15px;
+    box-shadow: 0 0 30px #00FFFF;
 }
 .about-col-2{
     flex-basis: 60%;
 }
 .about-title{
-    font-size: 60px;
+    font-size: 80px;
     font-weight: 600;
     color: white;
 }
@@ -100,10 +114,12 @@ nav ul li a:hover::after{
 }
 .tab-links{
     margin-right: 50px;
-    font-size: 18px;
+    font-size: 30px;
     font-weight: 500;
     cursor: pointer;
     position: relative;
+    color: #ababab;
+    transition: 1s;
 }
 .tab-links::after{
     content: '';
@@ -113,7 +129,7 @@ nav ul li a:hover::after{
     position: absolute;
     left: 0;
     bottom: -8px;
-    transition: 0.5s;
+    transition: 1s;
 }
 .tab-links.active-link::after{
     width: 50%;
@@ -124,7 +140,7 @@ nav ul li a:hover::after{
 }
 .tab-contents ul li span{
     color: #00FFFF;
-    font-size: 14px;
+    font-size: 20px;
 }
 .tab-contents{
     display: none;
@@ -132,7 +148,6 @@ nav ul li a:hover::after{
 .tab-contents.active-tab{
     display: block;
 }
-
 #projects{
     padding: 50px 0;
 }
@@ -171,8 +186,17 @@ nav ul li a:hover::after{
     font-size: 14px;
     transition: height 0.5s;
 }
+.layer a{
+    margin-top: 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 60px;
+    height: 50px;
+    border-radius: 40%;
+    text-align: center;
+}
 .layer h3{
-    font-weight: 500;
+    font-size: 50px;
     margin-bottom: 20px;
 }
 .layer button{
@@ -192,7 +216,7 @@ nav ul li a:hover::after{
     cursor: pointer;
 }
 .work:hover img{
-    transform: scale(1.1);
+    transform: scale(2.0);
 }
 .work:hover .layer{
     height: 100%;
@@ -206,7 +230,7 @@ nav ul li a:hover::after{
     border-radius: 6px;
     text-decoration: none;
     color: white;
-    transition: background 0.5s;
+    transition: background 1s;
 }
 .btn:hover{
     background: #00FFFF;
@@ -225,6 +249,12 @@ nav ul li a:hover::after{
 }
 .btn.btn2{
     display: inline-block;
+    background: black;
+    border: 2px solid #00FFFF;
+    transition: 1s;
+}
+
+.btn.btn2:hover{
     background: #00FFFF;
 }
 .contact-right form{
@@ -243,6 +273,7 @@ form input, form textarea{
 }
 form .btn2{
     padding: 14px 60px;
+    margin-left: 20px;
     margin-top: 20px;
     cursor: pointer;
     font-size: 30px;
