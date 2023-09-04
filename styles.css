@@ -35,10 +35,8 @@ html{
 }
 .aspiring{
         background: linear-gradient(319deg, #fce055 0%, #256eff 37%, #46237a 100%);
-
         background-size: 300%;
         font-family: 'Poppins', sans-serif;
-        font-weight: 800;
         font-size: 5vw;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
