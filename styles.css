@@ -7,6 +7,52 @@
 html{
     scroll-behavior: smooth;
 }
+.logo{
+    background:linear-gradient(315deg, #5078f2 0%, #efe9f4 74%);
+    background-size: 300%;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 4vw;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animated_text 10s ease-in-out infinite;
+    -moz-animation: animated_text 10s ease-in-out infinite;
+    -webkit-animation: animated_text 10s ease-in-out infinite;
+
+}
+.about-title{
+        background: linear-gradient(315deg, #03e5b7 0%, #037ade 74%);
+        background-size: 300%;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 300;
+        font-size: 4vw;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: animated_text 10s ease-in-out infinite;
+        -moz-animation: animated_text 10s ease-in-out infinite;
+        -webkit-animation: animated_text 10s ease-in-out infinite;
+
+}
+.aspiring{
+        background: linear-gradient(319deg, #fce055 0%, #256eff 37%, #46237a 100%);
+
+        background-size: 300%;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 800;
+        font-size: 5vw;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: animated_text 10s ease-in-out infinite;
+        -moz-animation: animated_text 10s ease-in-out infinite;
+        -webkit-animation: animated_text 10s ease-in-out infinite;
+}
+    
+ @keyframes animated_text {
+        0% { background-position: 0px 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0px 50%; }
+    }
+
 body{
     background-color: black;
     color: white
